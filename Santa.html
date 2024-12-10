@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xưởng Của Ông Già Noel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animation - Ẩn Footer khi scroll */
+    .footer-hidden {
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .footer-visible {
+      transform: translateY(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-red-100 text-white font-sans leading-normal tracking-normal">
+
+  <!-- Header với Thanh Điều Hướng -->
+  <header class="bg-[#4CAF50] py-4 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center px-6 md:px-12">
+      <div class="text-2xl font-bold">🎅 Xưởng Của Ông Già Noel 🎅</div>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:text-yellow-300 transition duration-200">Trang Chủ</a>
+        <a href="santa.html" class="hover:text-yellow-300 transition duration-200">Xưởng Của Ông Già Noel</a>
+        <a href="contact.html" class="hover:text-yellow-300 transition duration-200">Liên Hệ Với Santa</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Phần Giới thiệu Xưởng -->
+  <main class="min-h-screen bg-[url('images/bg2.jpg')] bg-cover bg-center bg-opacity-90 py-12">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Chào Mừng Đến Xưởng Của Ông Già Noel!</h2>
+      <p class="text-lg text-yellow-300 mb-4">Đây là nơi phép màu Giáng Sinh được tạo ra. Gửi thư và chia sẻ mong ước của bạn nào!</p>
+      <div class="mt-6">
+        <a href="contact.html" class="inline-block bg-red-500 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition duration-200">Gửi Thư Ngay</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#006400] py-4 text-center text-gray-200 fixed bottom-0 left-0 w-full footer-visible" id="footer">
+    <p>&copy; 2024 Christmas website | Made with ❤️</p>
+  </footer>
+
+  <!-- Logic JS Ẩn/Hiện Footer khi Scroll -->
+  <script>
+    let lastScroll = 0; // Ghi nhận vị trí scroll trước đó
+    const footer = document.getElementById('footer');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > lastScroll) {
+        // Nếu đang scroll xuống
+        footer.classList.add('footer-hidden');
+        footer.classList.remove('footer-visible');
+      } else {
+        // Nếu đang scroll lên
+        footer.classList.add('footer-visible');
+        footer.classList.remove('footer-hidden');
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+
+</body>
+
+</html>

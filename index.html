@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giáng Sinh Vui Vẻ - Khám Phá Mùa Lễ Hội</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  
-<script src="scripts/main.js"></script>
+
+<body class="bg-gradient-to-r from-red-500 to-green-700 text-gray-900 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-green-700 sticky top-0 py-4 shadow-lg z-50">
+    <nav class="container mx-auto flex justify-between items-center px-6 md:px-12">
+      <div class="text-2xl font-bold text-white">🎄 Giáng Sinh Vui Vẻ 🎄</div>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:text-yellow-300 transition duration-200 text-white">Trang Chủ</a>
+        <a href="santa.html" class="hover:text-yellow-300 transition duration-200 text-white">Xưởng Của Ông Già Noel</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Nội dung chính -->
+  <main class="py-12">
+    <!-- Giới thiệu -->
+    <section class="text-center bg-white bg-opacity-90 py-12">
+      <h2 class="text-4xl md:text-5xl font-bold text-red-600 mb-4">Chào Mừng Đến Mùa Giáng Sinh!</h2>
+      <p class="text-lg text-gray-700 mb-6">Khám phá mùa lễ hội đầy ắp tình yêu, niềm vui, và những khoảnh khắc kỳ diệu.</p>
+      <div class="mt-6">
+        <a href="#highlights" class="inline-block bg-red-500 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-md transition duration-200">Khám Phá Ngay</a>
+      </div>
+    </section>
+
+    <!-- Mục nổi bật -->
+    <section id="highlights" class="container mx-auto px-6 md:px-12 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-transform duration-200">
+          <img src="images/santa.jpg" alt="Santa Claus Vui Vẻ" class="w-full rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-red-600">Ông Già Noel</h3>
+          <p class="text-gray-700 mt-2">Hãy cùng tìm hiểu về nhân vật mang đến những món quà đặc biệt cho trẻ em trên toàn thế giới.</p>
+        </div>
+        <!-- Cây Thông -->
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-transform duration-200">
+          <img src="images/christmastree.jpg" alt="Cây Thông Giáng Sinh" class="w-full rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-red-600">Cây Thông Giáng Sinh</h3>
+          <p class="text-gray-700 mt-2">Biểu tượng không thể thiếu của Giáng Sinh, mang đến không khí ấm áp và ánh sáng lung linh.</p>
+        </div>
+        <!-- Tuyết Rơi -->
+        <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transform hover:scale-105 transition-transform duration-200">
+          <img src="images/snowy.jpg" alt="Khung Cảnh Tuyết Rơi" class="w-full rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-red-600">Khung Cảnh Tuyết Rơi</h3>
+          <p class="text-gray-700 mt-2">Tận hưởng vẻ đẹp của tuyết trắng trong mùa lễ hội, tạo nên những kỷ niệm khó quên.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 py-6 text-center text-white">
+    <p>&copy; 2024 Giáng Sinh Vui Vẻ | Được tạo bởi ❤️ & TailwindCSS</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="hover:text-yellow-300"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
 </body>
+
 </html>
